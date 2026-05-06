@@ -1,0 +1,2643 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Rain Edge International</title>
+    <meta
+      name="description"
+      content="Learn about Rain Edge International — our story, mission, vision, core values, leadership team, and the communities we serve across our orphanage, schools, and social enterprises."
+    />
+    <meta property="og:title" content="About Us | Rain Edge International" />
+    <meta
+      property="og:description"
+      content="From a single orphanage home to a full ecosystem of education and enterprise — discover how Rain Edge International is transforming lives."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.rainedgeinternational.org/about.html"
+    />
+    <link
+      rel="canonical"
+      href="https://www.rainedgeinternational.org/about.html"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "NGO",
+        "name": "Rain Edge International",
+        "description": "Orphanage home, primary and secondary schools, and social enterprises empowering children and communities.",
+        "url": "https://www.rainedgeinternational.org",
+        "foundingDate": "2008"
+      }
+    </script>
+
+    <style>
+      /* ─── DESIGN TOKENS ─────────────────────────────── */
+      :root {
+        --clr-primary: #1c3a5e;
+        --clr-primary-mid: #2a5298;
+        --clr-primary-light: #d6e4f7;
+        --clr-accent: #f5a623;
+        --clr-accent-dark: #c47d00;
+        --clr-accent-light: #fef0d0;
+        --clr-earth: #e07b54;
+        --clr-earth-light: #fdeee8;
+        --clr-success: #2eaf80;
+        --clr-success-light: #d4f4e8;
+        --clr-text: #1a1a2e;
+        --clr-text-muted: #5a6070;
+        --clr-text-light: #8a91a0;
+        --clr-bg: #fffdf9;
+        --clr-bg-alt: #f7f3ee;
+        --clr-white: #ffffff;
+        --clr-border: #e8e2d9;
+
+        --font-display: "Fraunces", Georgia, serif;
+        --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+
+        --fs-xs: 11px;
+        --fs-sm: 13px;
+        --fs-base: 15px;
+        --fs-md: 17px;
+        --fs-lg: 22px;
+        --fs-xl: 28px;
+        --fs-2xl: 36px;
+        --fs-3xl: 48px;
+        --fs-hero: 52px;
+
+        --space-xs: 8px;
+        --space-sm: 16px;
+        --space-md: 24px;
+        --space-lg: 40px;
+        --space-xl: 64px;
+        --space-2xl: 96px;
+
+        --radius-sm: 6px;
+        --radius-md: 12px;
+        --radius-lg: 20px;
+        --radius-xl: 32px;
+        --radius-full: 9999px;
+
+        --shadow-sm: 0 1px 4px rgba(28, 58, 94, 0.08);
+        --shadow-md: 0 4px 20px rgba(28, 58, 94, 0.1);
+        --shadow-lg: 0 12px 40px rgba(28, 58, 94, 0.14);
+
+        --ease: cubic-bezier(0.22, 1, 0.36, 1);
+        --t-fast: 0.18s;
+        --t-mid: 0.35s;
+        --t-slow: 0.6s;
+      }
+
+      /* ─── RESET ─────────────────────────────────────── */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: var(--font-body);
+        font-size: var(--fs-base);
+        color: var(--clr-text);
+        background: var(--clr-bg);
+        line-height: 1.7;
+        overflow-x: hidden;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+      }
+      button {
+        font-family: inherit;
+        cursor: pointer;
+        border: none;
+      }
+
+      /* ─── ANIMATIONS ─────────────────────────────────── */
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(28px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.94);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+      @keyframes pulse-ring {
+        0% {
+          transform: scale(1);
+          opacity: 0.6;
+        }
+        100% {
+          transform: scale(1.5);
+          opacity: 0;
+        }
+      }
+      @keyframes slideRight {
+        from {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes countUp {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(28px);
+        transition:
+          opacity var(--t-slow) var(--ease),
+          transform var(--t-slow) var(--ease);
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .reveal-delay-1 {
+        transition-delay: 0.1s;
+      }
+      .reveal-delay-2 {
+        transition-delay: 0.2s;
+      }
+      .reveal-delay-3 {
+        transition-delay: 0.3s;
+      }
+      .reveal-delay-4 {
+        transition-delay: 0.4s;
+      }
+      .reveal-delay-5 {
+        transition-delay: 0.5s;
+      }
+
+      /* ─── UTILITIES ──────────────────────────────────── */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      .container {
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 0 var(--space-md);
+      }
+      .section {
+        padding: var(--space-2xl) 0;
+      }
+      .section-alt {
+        background: var(--clr-bg-alt);
+      }
+
+      .tag {
+        display: inline-block;
+        font-size: var(--fs-xs);
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--clr-accent-dark);
+        background: var(--clr-accent-light);
+        padding: 4px 12px;
+        border-radius: var(--radius-full);
+        margin-bottom: var(--space-sm);
+      }
+      .section-title {
+        font-family: var(--font-display);
+        font-size: var(--fs-2xl);
+        font-weight: 500;
+        line-height: 1.2;
+        color: var(--clr-primary);
+        margin-bottom: 14px;
+      }
+      .section-intro {
+        font-size: var(--fs-md);
+        color: var(--clr-text-muted);
+        max-width: 560px;
+        line-height: 1.8;
+        margin-bottom: var(--space-lg);
+      }
+
+      .btn-primary {
+        display: inline-block;
+        background: var(--clr-accent);
+        color: var(--clr-primary);
+        font-weight: 600;
+        font-size: var(--fs-sm);
+        padding: 13px 28px;
+        border-radius: var(--radius-full);
+        transition:
+          background var(--t-fast),
+          transform var(--t-fast),
+          box-shadow var(--t-fast);
+      }
+      .btn-primary:hover {
+        background: var(--clr-accent-dark);
+        color: var(--clr-white);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(245, 166, 35, 0.35);
+      }
+      .btn-outline-dark {
+        display: inline-block;
+        background: transparent;
+        color: var(--clr-primary);
+        font-weight: 500;
+        font-size: var(--fs-sm);
+        padding: 13px 28px;
+        border-radius: var(--radius-full);
+        border: 1px solid var(--clr-border);
+        transition:
+          background var(--t-fast),
+          border-color var(--t-fast),
+          transform var(--t-fast);
+      }
+      .btn-outline-dark:hover {
+        background: var(--clr-bg-alt);
+        border-color: var(--clr-primary);
+        transform: translateY(-2px);
+      }
+      .btn-outline-white {
+        display: inline-block;
+        background: transparent;
+        color: rgba(255, 255, 255, 0.85);
+        font-weight: 500;
+        font-size: var(--fs-sm);
+        padding: 13px 28px;
+        border-radius: var(--radius-full);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition:
+          background var(--t-fast),
+          border-color var(--t-fast);
+      }
+      .btn-outline-white:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.6);
+      }
+
+      /* ─── NAVBAR ─────────────────────────────────────── */
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 900;
+        background: rgba(255, 253, 249, 0.92);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid transparent;
+        transition:
+          border-color var(--t-mid) var(--ease),
+          box-shadow var(--t-mid) var(--ease);
+      }
+      .nav.scrolled {
+        border-color: var(--clr-border);
+        box-shadow: var(--shadow-sm);
+      }
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 68px;
+      }
+      .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        animation: fadeIn var(--t-slow) var(--ease) both;
+      }
+      .logo-mark {
+        width: 38px;
+        height: 38px;
+        background: var(--clr-primary);
+        border-radius: var(--radius-sm);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--clr-accent);
+        font-family: var(--font-display);
+        font-size: 15px;
+        font-weight: 600;
+        flex-shrink: 0;
+      }
+      .logo-text {
+        font-size: var(--fs-sm);
+        font-weight: 600;
+        color: var(--clr-primary);
+        line-height: 1.3;
+      }
+      .logo-text span {
+        display: block;
+        font-size: var(--fs-xs);
+        font-weight: 400;
+        color: var(--clr-text-muted);
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+      }
+      .nav-links a {
+        font-size: var(--fs-sm);
+        color: var(--clr-text-muted);
+        padding: 6px 12px;
+        border-radius: var(--radius-sm);
+        transition:
+          background var(--t-fast),
+          color var(--t-fast);
+      }
+      .nav-links a:hover,
+      .nav-links a.active {
+        background: var(--clr-bg-alt);
+        color: var(--clr-primary);
+      }
+      .nav-links a.active {
+        font-weight: 600;
+      }
+      .nav-cta-desktop {
+        background: var(--clr-accent);
+        color: var(--clr-primary);
+        font-size: var(--fs-sm);
+        font-weight: 600;
+        padding: 9px 20px;
+        border-radius: var(--radius-full);
+        transition:
+          background var(--t-fast),
+          transform var(--t-fast);
+      }
+      .nav-cta-desktop:hover {
+        background: var(--clr-accent-dark);
+        color: var(--clr-white);
+        transform: translateY(-1px);
+      }
+      .nav-hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 36px;
+        height: 36px;
+        background: transparent;
+        border: none;
+        padding: 4px;
+        cursor: pointer;
+        border-radius: var(--radius-sm);
+        transition: background var(--t-fast);
+      }
+      .nav-hamburger:hover {
+        background: var(--clr-bg-alt);
+      }
+      .nav-hamburger span {
+        display: block;
+        height: 2px;
+        background: var(--clr-primary);
+        border-radius: 2px;
+        transition:
+          transform var(--t-mid) var(--ease),
+          opacity var(--t-fast),
+          width var(--t-mid);
+        transform-origin: center;
+      }
+      .nav-hamburger span:nth-child(1) {
+        width: 22px;
+      }
+      .nav-hamburger span:nth-child(2) {
+        width: 16px;
+      }
+      .nav-hamburger span:nth-child(3) {
+        width: 22px;
+      }
+      .nav-hamburger.open span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+        width: 22px;
+      }
+      .nav-hamburger.open span:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+      }
+      .nav-hamburger.open span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+        width: 22px;
+      }
+      .nav-mobile-cta {
+        display: none;
+      }
+
+      /* ─── PAGE HERO ───────────────────────────────────── */
+      .page-hero {
+        background: var(--clr-primary);
+        padding: 140px 0 80px;
+        position: relative;
+        overflow: hidden;
+      }
+      .page-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(
+          circle,
+          rgba(245, 166, 35, 0.1) 1px,
+          transparent 1px
+        );
+        background-size: 32px 32px;
+        pointer-events: none;
+      }
+      .page-hero::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background: linear-gradient(to top, var(--clr-bg) 0%, transparent 100%);
+      }
+      .page-hero-inner {
+        position: relative;
+        z-index: 2;
+      }
+      .breadcrumb {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: var(--fs-xs);
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: var(--space-md);
+        animation: slideRight 0.6s var(--ease) 0.05s both;
+      }
+      .breadcrumb a {
+        color: rgba(255, 255, 255, 0.5);
+        transition: color var(--t-fast);
+      }
+      .breadcrumb a:hover {
+        color: var(--clr-accent);
+      }
+      .breadcrumb-sep {
+        color: rgba(255, 255, 255, 0.25);
+      }
+      .breadcrumb-current {
+        color: var(--clr-accent);
+        font-weight: 600;
+      }
+      .page-hero h1 {
+        font-family: var(--font-display);
+        font-size: var(--fs-hero);
+        font-weight: 500;
+        color: var(--clr-white);
+        line-height: 1.1;
+        max-width: 640px;
+        margin-bottom: var(--space-sm);
+        animation: fadeUp 0.8s var(--ease) 0.15s both;
+      }
+      .page-hero h1 em {
+        font-style: italic;
+        color: var(--clr-accent);
+      }
+      .page-hero-sub {
+        font-size: var(--fs-md);
+        color: rgba(255, 255, 255, 0.65);
+        max-width: 520px;
+        line-height: 1.8;
+        animation: fadeUp 0.8s var(--ease) 0.3s both;
+      }
+      /* Decorative arcs */
+      .page-hero-arc {
+        position: absolute;
+        right: -80px;
+        top: 40px;
+        width: 360px;
+        height: 360px;
+        border-radius: 50%;
+        border: 1.5px solid rgba(245, 166, 35, 0.14);
+        pointer-events: none;
+      }
+      .page-hero-arc2 {
+        position: absolute;
+        right: 40px;
+        top: 120px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 1.5px solid rgba(245, 166, 35, 0.08);
+        pointer-events: none;
+      }
+
+      /* ─── STORY ───────────────────────────────────────── */
+      .story-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-xl);
+        align-items: center;
+      }
+      .story-img-wrap {
+        position: relative;
+      }
+      .story-img-main {
+        width: 100%;
+        height: 460px;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: var(--radius-lg);
+      }
+      /* Layered accent box behind image */
+      .story-img-wrap::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: -20px;
+        width: 100%;
+        height: 100%;
+        border: 2px solid var(--clr-accent-light);
+        border-radius: var(--radius-lg);
+        z-index: -1;
+      }
+      .story-founded-badge {
+        position: absolute;
+        bottom: -18px;
+        right: -18px;
+        background: var(--clr-earth);
+        color: var(--clr-white);
+        padding: 20px 24px;
+        border-radius: var(--radius-md);
+        text-align: center;
+        box-shadow: var(--shadow-lg);
+      }
+      .story-founded-badge .big {
+        font-family: var(--font-display);
+        font-size: var(--fs-2xl);
+        font-weight: 600;
+        line-height: 1;
+      }
+      .story-founded-badge .small {
+        font-size: var(--fs-xs);
+        font-weight: 600;
+        margin-top: 4px;
+        opacity: 0.85;
+        letter-spacing: 0.5px;
+      }
+      .story-text h2 {
+        font-family: var(--font-display);
+        font-size: var(--fs-2xl);
+        font-weight: 500;
+        color: var(--clr-primary);
+        line-height: 1.25;
+        margin-bottom: 20px;
+      }
+      .story-text h2 em {
+        font-style: italic;
+        color: var(--clr-earth);
+      }
+      .story-text p {
+        font-size: var(--fs-base);
+        color: var(--clr-text-muted);
+        line-height: 1.85;
+        margin-bottom: 16px;
+      }
+      .story-text p:last-of-type {
+        margin-bottom: var(--space-lg);
+      }
+      .story-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      /* ─── MISSION + VISION ───────────────────────────── */
+      .mv-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-md);
+        margin-top: var(--space-lg);
+      }
+      .mv-card {
+        border-radius: var(--radius-lg);
+        padding: var(--space-lg);
+        position: relative;
+        overflow: hidden;
+      }
+      .mv-card-mission {
+        background: var(--clr-primary);
+      }
+      .mv-card-vision {
+        background: var(--clr-accent);
+      }
+      .mv-card::before {
+        content: "";
+        position: absolute;
+        bottom: -40px;
+        right: -40px;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.06);
+        pointer-events: none;
+      }
+      .mv-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        margin-bottom: var(--space-md);
+      }
+      .mv-card-mission .mv-icon {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .mv-card-vision .mv-icon {
+        background: rgba(28, 58, 94, 0.12);
+      }
+      .mv-label {
+        font-size: var(--fs-xs);
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      .mv-card-mission .mv-label {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .mv-card-vision .mv-label {
+        color: rgba(28, 58, 94, 0.55);
+      }
+      .mv-title {
+        font-family: var(--font-display);
+        font-size: var(--fs-xl);
+        font-weight: 500;
+        line-height: 1.3;
+        margin-bottom: 14px;
+      }
+      .mv-card-mission .mv-title {
+        color: var(--clr-white);
+      }
+      .mv-card-vision .mv-title {
+        color: var(--clr-primary);
+      }
+      .mv-body {
+        font-size: var(--fs-base);
+        line-height: 1.8;
+      }
+      .mv-card-mission .mv-body {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .mv-card-vision .mv-body {
+        color: rgba(28, 58, 94, 0.75);
+      }
+
+      /* ─── CORE VALUES ─────────────────────────────────── */
+      .values-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-md);
+      }
+      .value-card {
+        background: var(--clr-white);
+        border: 1px solid var(--clr-border);
+        border-radius: var(--radius-lg);
+        padding: var(--space-md);
+        transition:
+          transform var(--t-mid) var(--ease),
+          box-shadow var(--t-mid) var(--ease),
+          border-color var(--t-mid);
+        position: relative;
+        overflow: hidden;
+      }
+      .value-card::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: var(--bar-clr, var(--clr-accent));
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform var(--t-mid) var(--ease);
+      }
+      .value-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-md);
+        border-color: transparent;
+      }
+      .value-card:hover::after {
+        transform: scaleX(1);
+      }
+      .value-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        margin-bottom: var(--space-sm);
+      }
+      .value-card h3 {
+        font-size: var(--fs-base);
+        font-weight: 600;
+        color: var(--clr-primary);
+        margin-bottom: 6px;
+      }
+      .value-card p {
+        font-size: var(--fs-sm);
+        color: var(--clr-text-muted);
+        line-height: 1.7;
+      }
+
+      /* ─── IMPACT NUMBERS ─────────────────────────────── */
+      .impact-section {
+        background: var(--clr-primary);
+        padding: var(--space-2xl) 0;
+        position: relative;
+        overflow: hidden;
+      }
+      .impact-section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(
+          circle,
+          rgba(245, 166, 35, 0.09) 1px,
+          transparent 1px
+        );
+        background-size: 28px 28px;
+        pointer-events: none;
+      }
+      .impact-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-md);
+        position: relative;
+        z-index: 1;
+      }
+      .impact-item {
+        text-align: center;
+        padding: var(--space-md) var(--space-sm);
+      }
+      .impact-item + .impact-item {
+        border-left: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .impact-num {
+        font-family: var(--font-display);
+        font-size: var(--fs-3xl);
+        font-weight: 600;
+        color: var(--clr-accent);
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+      .impact-label {
+        font-size: var(--fs-sm);
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.5;
+        font-weight: 500;
+      }
+      .impact-sublabel {
+        font-size: var(--fs-xs);
+        color: rgba(255, 255, 255, 0.35);
+        margin-top: 4px;
+      }
+
+      /* ─── WHO WE SERVE ───────────────────────────────── */
+      .serve-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-md);
+      }
+      .serve-card {
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        border: 1px solid var(--clr-border);
+        background: var(--clr-white);
+        transition:
+          transform var(--t-mid) var(--ease),
+          box-shadow var(--t-mid) var(--ease);
+      }
+      .serve-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-lg);
+      }
+      .serve-header {
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .serve-icon-big {
+        font-size: 42px;
+      }
+      .serve-body {
+        padding: var(--space-md);
+      }
+      .serve-body h3 {
+        font-family: var(--font-display);
+        font-size: var(--fs-lg);
+        font-weight: 500;
+        color: var(--clr-primary);
+        margin-bottom: 8px;
+      }
+      .serve-body p {
+        font-size: var(--fs-sm);
+        color: var(--clr-text-muted);
+        line-height: 1.7;
+      }
+      .serve-list {
+        margin-top: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+      }
+      .serve-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        font-size: var(--fs-sm);
+        color: var(--clr-text-muted);
+      }
+      .serve-list-dot {
+        width: 6px;
+        height: 6px;
+        background: var(--clr-accent);
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin-top: 6px;
+      }
+
+      /* ─── TIMELINE ───────────────────────────────────── */
+      .timeline {
+        position: relative;
+        padding-left: 0;
+      }
+      .timeline-track {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 2px;
+        background: var(--clr-border);
+        transform: translateX(-50%);
+      }
+      .timeline-track-fill {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background: linear-gradient(
+          to bottom,
+          var(--clr-accent) 0%,
+          var(--clr-primary-mid) 100%
+        );
+        transition: height 1.5s var(--ease);
+        height: 0;
+      }
+      .timeline-item {
+        display: grid;
+        grid-template-columns: 1fr 48px 1fr;
+        align-items: start;
+        gap: var(--space-md);
+        margin-bottom: var(--space-lg);
+        position: relative;
+        z-index: 1;
+      }
+      .timeline-item:last-child {
+        margin-bottom: 0;
+      }
+      .timeline-content {
+        background: var(--clr-white);
+        border: 1px solid var(--clr-border);
+        border-radius: var(--radius-lg);
+        padding: var(--space-md);
+        transition:
+          box-shadow var(--t-mid),
+          border-color var(--t-mid);
+      }
+      .timeline-content:hover {
+        box-shadow: var(--shadow-md);
+        border-color: var(--clr-accent);
+      }
+      .timeline-item:nth-child(even) .timeline-content-left {
+        order: 3;
+      }
+      .timeline-item:nth-child(even) .timeline-center {
+        order: 2;
+      }
+      .timeline-item:nth-child(even) .timeline-content-right {
+        order: 1;
+      }
+      .timeline-item:nth-child(odd) .timeline-content-left {
+        order: 1;
+      }
+      .timeline-item:nth-child(odd) .timeline-center {
+        order: 2;
+      }
+      .timeline-item:nth-child(odd) .timeline-content-right {
+        order: 3;
+      }
+      /* Even: left side filled, right empty. Odd: left empty, right filled. */
+      .timeline-item:nth-child(odd) .timeline-content-left {
+        visibility: hidden;
+      }
+      .timeline-item:nth-child(even) .timeline-content-right {
+        visibility: hidden;
+      }
+      .timeline-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 16px;
+      }
+      .timeline-dot {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: var(--clr-primary);
+        border: 3px solid var(--clr-bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: var(--shadow-md);
+        flex-shrink: 0;
+      }
+      .timeline-dot-year {
+        font-size: 9px;
+        font-weight: 700;
+        color: var(--clr-accent);
+        letter-spacing: 0.5px;
+        text-align: center;
+      }
+      .timeline-year-badge {
+        display: inline-block;
+        font-size: var(--fs-xs);
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background: var(--clr-accent-light);
+        color: var(--clr-accent-dark);
+        padding: 3px 10px;
+        border-radius: var(--radius-full);
+        margin-bottom: 8px;
+      }
+      .timeline-content h3 {
+        font-size: var(--fs-base);
+        font-weight: 600;
+        color: var(--clr-primary);
+        margin-bottom: 6px;
+      }
+      .timeline-content p {
+        font-size: var(--fs-sm);
+        color: var(--clr-text-muted);
+        line-height: 1.65;
+      }
+
+      /* ─── TEAM ───────────────────────────────────────── */
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-md);
+      }
+      .team-card {
+        background: var(--clr-white);
+        border: 1px solid var(--clr-border);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        text-align: center;
+        transition:
+          transform var(--t-mid) var(--ease),
+          box-shadow var(--t-mid) var(--ease);
+      }
+      .team-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-lg);
+      }
+      .team-avatar {
+        height: 180px;
+        background: var(--clr-bg-alt);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .team-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+      .team-avatar-fallback {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-display);
+        font-size: var(--fs-xl);
+        font-weight: 600;
+        color: var(--clr-white);
+      }
+      .team-body {
+        padding: 18px;
+      }
+      .team-name {
+        font-family: var(--font-display);
+        font-size: var(--fs-md);
+        font-weight: 500;
+        color: var(--clr-primary);
+        margin-bottom: 3px;
+      }
+      .team-role {
+        font-size: var(--fs-xs);
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: var(--clr-earth);
+        margin-bottom: 10px;
+      }
+      .team-bio {
+        font-size: var(--fs-sm);
+        color: var(--clr-text-muted);
+        line-height: 1.6;
+      }
+
+      /* Founder card — featured */
+      .team-card-founder {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        text-align: left;
+      }
+      .team-card-founder .team-avatar {
+        height: 100%;
+        min-height: 240px;
+      }
+      .team-card-founder .team-body {
+        padding: var(--space-md) var(--space-lg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .team-card-founder .team-name {
+        font-size: var(--fs-xl);
+      }
+      .team-card-founder .team-bio {
+        margin-bottom: 16px;
+      }
+      .team-card-founder .team-quote {
+        background: var(--clr-primary-light);
+        border-left: 3px solid var(--clr-primary);
+        padding: 12px 16px;
+        border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        font-family: var(--font-display);
+        font-style: italic;
+        font-size: var(--fs-base);
+        color: var(--clr-primary);
+        line-height: 1.55;
+      }
+
+      /* ─── PARTNERS ───────────────────────────────────── */
+      .partners-strip {
+        background: var(--clr-bg-alt);
+        padding: var(--space-xl) 0;
+      }
+      .partners-label {
+        text-align: center;
+        font-size: var(--fs-xs);
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--clr-text-light);
+        margin-bottom: var(--space-lg);
+      }
+      .partners-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-md);
+        align-items: center;
+        justify-content: center;
+      }
+      .partner-badge {
+        background: var(--clr-white);
+        border: 1px solid var(--clr-border);
+        border-radius: var(--radius-md);
+        padding: 14px 24px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: var(--fs-sm);
+        font-weight: 600;
+        color: var(--clr-text-muted);
+        transition:
+          border-color var(--t-fast),
+          box-shadow var(--t-fast),
+          color var(--t-fast);
+      }
+      .partner-badge:hover {
+        border-color: var(--clr-primary-mid);
+        box-shadow: var(--shadow-sm);
+        color: var(--clr-primary);
+      }
+      .partner-icon {
+        font-size: 18px;
+      }
+
+      /* ─── JOIN US CTA ─────────────────────────────────── */
+      .cta-section {
+        background: var(--clr-primary);
+        padding: var(--space-2xl) 0;
+        position: relative;
+        overflow: hidden;
+      }
+      .cta-section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(
+          circle,
+          rgba(245, 166, 35, 0.08) 1px,
+          transparent 1px
+        );
+        background-size: 28px 28px;
+        pointer-events: none;
+      }
+      .cta-inner {
+        text-align: center;
+        max-width: 640px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+      .cta-inner h2 {
+        font-family: var(--font-display);
+        font-size: var(--fs-2xl);
+        font-weight: 500;
+        color: var(--clr-white);
+        line-height: 1.3;
+        margin-bottom: 14px;
+      }
+      .cta-inner h2 em {
+        font-style: italic;
+        color: var(--clr-accent);
+      }
+      .cta-inner p {
+        font-size: var(--fs-md);
+        color: rgba(255, 255, 255, 0.65);
+        line-height: 1.8;
+        margin-bottom: var(--space-lg);
+      }
+      .cta-actions {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .cta-ways {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-sm);
+        margin-top: var(--space-xl);
+      }
+      .cta-way {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: var(--radius-lg);
+        padding: var(--space-md);
+        text-align: center;
+        transition:
+          background var(--t-fast),
+          border-color var(--t-fast);
+      }
+      .cta-way:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(245, 166, 35, 0.4);
+      }
+      .cta-way-icon {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+      .cta-way h3 {
+        font-size: var(--fs-base);
+        font-weight: 600;
+        color: var(--clr-white);
+        margin-bottom: 6px;
+      }
+      .cta-way p {
+        font-size: var(--fs-sm);
+        color: rgba(255, 255, 255, 0.55);
+        line-height: 1.6;
+      }
+
+      /* ─── FOOTER ─────────────────────────────────────── */
+      .footer {
+        background: #111828;
+        padding: var(--space-2xl) 0 var(--space-lg);
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: var(--space-xl);
+        margin-bottom: var(--space-xl);
+      }
+      .footer-brand p {
+        font-size: var(--fs-sm);
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 1.8;
+        margin: 14px 0;
+      }
+      .footer h4 {
+        font-size: var(--fs-xs);
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.4);
+        margin-bottom: 16px;
+      }
+      .footer ul li {
+        margin-bottom: 10px;
+      }
+      .footer ul li a {
+        font-size: var(--fs-sm);
+        color: rgba(255, 255, 255, 0.6);
+        transition: color var(--t-fast);
+      }
+      .footer ul li a:hover {
+        color: var(--clr-accent);
+      }
+      .footer-socials {
+        display: flex;
+        gap: 8px;
+      }
+      .social-btn {
+        width: 32px;
+        height: 32px;
+        border-radius: var(--radius-sm);
+        background: rgba(255, 255, 255, 0.07);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--fs-xs);
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.5);
+        transition:
+          background var(--t-fast),
+          color var(--t-fast);
+      }
+      .social-btn:hover {
+        background: var(--clr-accent);
+        color: var(--clr-primary);
+      }
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+        padding-top: var(--space-md);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .footer-bottom p {
+        font-size: var(--fs-xs);
+        color: rgba(255, 255, 255, 0.3);
+      }
+      .footer-bottom a {
+        font-size: var(--fs-xs);
+        color: rgba(255, 255, 255, 0.3);
+        margin-left: 16px;
+        transition: color var(--t-fast);
+      }
+      .footer-bottom a:hover {
+        color: var(--clr-accent);
+      }
+
+      /* ─── RESPONSIVE ─────────────────────────────────── */
+      @media (max-width: 1024px) {
+        :root {
+          --fs-hero: 38px;
+          --fs-2xl: 28px;
+          --fs-xl: 22px;
+          --fs-3xl: 38px;
+          --space-2xl: 72px;
+          --space-xl: 48px;
+        }
+        .nav-links {
+          display: none;
+        }
+        .nav-cta-desktop {
+          display: none;
+        }
+        .nav-hamburger {
+          display: flex;
+        }
+        .nav-mobile-cta {
+          display: block;
+        }
+        .nav-links.nav-open {
+          display: flex;
+          flex-direction: column;
+          position: fixed;
+          top: 68px;
+          left: 0;
+          right: 0;
+          background: var(--clr-bg);
+          border-top: 1px solid var(--clr-border);
+          border-bottom: 1px solid var(--clr-border);
+          padding: 16px 24px 24px;
+          gap: 4px;
+          box-shadow: var(--shadow-md);
+          z-index: 899;
+          animation: fadeUp 0.25s var(--ease) both;
+        }
+        .nav-links.nav-open li a {
+          display: block;
+          font-size: var(--fs-base);
+          padding: 10px 12px;
+          border-radius: var(--radius-sm);
+        }
+
+        .story-grid {
+          grid-template-columns: 1fr;
+          gap: var(--space-lg);
+        }
+        .story-img-wrap {
+          max-width: 560px;
+          margin: 0 auto;
+        }
+        .mv-grid {
+          grid-template-columns: 1fr;
+        }
+        .values-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .impact-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .impact-item + .impact-item:nth-child(3) {
+          border-left: none;
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .serve-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .team-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .team-card-founder {
+          grid-column: span 2;
+        }
+        .cta-ways {
+          grid-template-columns: 1fr;
+          gap: var(--space-sm);
+        }
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: var(--space-lg);
+        }
+        .footer-brand {
+          grid-column: 1/-1;
+        }
+      }
+
+      @media (max-width: 640px) {
+        :root {
+          --fs-hero: 30px;
+          --fs-2xl: 24px;
+          --fs-xl: 20px;
+          --fs-3xl: 32px;
+          --fs-lg: 18px;
+          --space-2xl: 56px;
+          --space-xl: 36px;
+          --space-lg: 28px;
+        }
+        .container {
+          padding: 0 16px;
+        }
+        .page-hero {
+          padding: 120px 0 56px;
+        }
+        .page-hero-arc,
+        .page-hero-arc2 {
+          display: none;
+        }
+        .story-img-main {
+          height: 280px;
+        }
+        .story-img-wrap::before {
+          display: none;
+        }
+        .story-founded-badge {
+          bottom: 12px;
+          right: 12px;
+          padding: 14px 16px;
+        }
+        .story-founded-badge .big {
+          font-size: var(--fs-xl);
+        }
+        .story-actions {
+          flex-direction: column;
+        }
+        .story-actions a {
+          width: 100%;
+          text-align: center;
+        }
+        .values-grid {
+          grid-template-columns: 1fr;
+        }
+        .impact-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .impact-num {
+          font-size: var(--fs-2xl);
+        }
+        .serve-grid {
+          grid-template-columns: 1fr;
+        }
+        /* Timeline: single column */
+        .timeline-track {
+          display: none;
+        }
+        .timeline-item {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+        .timeline-center {
+          justify-content: flex-start;
+          padding: 0 0 var(--space-sm) 0;
+        }
+        .timeline-item:nth-child(odd) .timeline-content-left {
+          visibility: visible;
+          display: none;
+        }
+        .timeline-item:nth-child(even) .timeline-content-right {
+          visibility: visible;
+          display: none;
+        }
+        .timeline-item:nth-child(even) .timeline-content-left {
+          order: 1;
+        }
+        .timeline-item:nth-child(even) .timeline-center {
+          order: 0;
+        }
+        .timeline-item:nth-child(odd) .timeline-content-right {
+          order: 1;
+        }
+        .timeline-item:nth-child(odd) .timeline-center {
+          order: 0;
+        }
+        .team-grid {
+          grid-template-columns: 1fr;
+        }
+        .team-card-founder {
+          grid-template-columns: 1fr;
+          grid-column: auto;
+        }
+        .team-card-founder .team-avatar {
+          height: 220px;
+        }
+        .team-card-founder .team-body {
+          padding: var(--space-md);
+        }
+        .partners-row {
+          gap: 10px;
+        }
+        .partner-badge {
+          padding: 10px 16px;
+          font-size: var(--fs-xs);
+        }
+        .cta-ways {
+          grid-template-columns: 1fr;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr;
+          gap: var(--space-md);
+        }
+        .footer-brand {
+          grid-column: auto;
+        }
+        .footer-bottom {
+          flex-direction: column;
+          gap: 10px;
+          text-align: center;
+        }
+        .footer-bottom div {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 4px;
+        }
+        .footer-bottom a {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ════════════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════════ -->
+    <header>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <div class="container nav-inner">
+          <a
+            href="/"
+            class="nav-logo"
+            aria-label="Rain Edge International home"
+          >
+            <div class="logo-mark" aria-hidden="true">RE</div>
+            <div class="logo-text">
+              Rain Edge International<span
+                >Orphanage · Schools · Enterprises</span
+              >
+            </div>
+          </a>
+          <ul class="nav-links" id="nav-links" role="list">
+            <li><a href="/">Home</a></li>
+            <li>
+              <a href="./about.html" class="active" aria-current="page"
+                >About</a
+              >
+            </li>
+            <li><a href="/programs.html">Programs</a></li>
+            <li><a href="/schools.html">Schools</a></li>
+            <li><a href="/industries.html">Industries</a></li>
+            <li><a href="/news.html">News</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li class="nav-mobile-cta">
+              <a
+                href="/donate.html"
+                class="btn-primary"
+                style="display: inline-block; margin-top: 8px"
+                >Donate Now</a
+              >
+            </li>
+          </ul>
+          <a href="/donate.html" class="nav-cta-desktop">Donate Now</a>
+          <button
+            class="nav-hamburger"
+            id="nav-hamburger"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ════════════════════════════════════════════════════════
+     PAGE HERO
+════════════════════════════════════════════════════════ -->
+      <section class="page-hero" aria-labelledby="page-heading">
+        <div class="page-hero-arc" aria-hidden="true"></div>
+        <div class="page-hero-arc2" aria-hidden="true"></div>
+        <div class="container page-hero-inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep" aria-hidden="true">›</span>
+            <span class="breadcrumb-current" aria-current="page">About Us</span>
+          </nav>
+          <h1 id="page-heading">
+            More Than an Orphanage.<br /><em>A Movement</em> for Children.
+          </h1>
+          <p class="page-hero-sub">
+            For over 15 years, Rain Edge International has turned compassion
+            into action — building a home, a school, and a community enterprise
+            that sustains itself and gives every child a fighting chance.
+          </p>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════════════════
+     OUR STORY
+════════════════════════════════════════════════════════ -->
+      <section class="section" aria-labelledby="story-heading">
+        <div class="container">
+          <div class="story-grid">
+            <div class="story-img-wrap reveal">
+              <img
+                class="story-img-main"
+                src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=800&q=80&auto=format"
+                alt="Children learning in the Rain Edge school"
+                width="800"
+                loading="lazy"
+              />
+              <div class="story-founded-badge">
+                <div class="big">2008</div>
+                <div class="small">Founded</div>
+              </div>
+            </div>
+
+            <div class="story-text reveal reveal-delay-1">
+              <div class="tag">Our Story</div>
+              <h2 id="story-heading">It Started With <em>One Open Door</em></h2>
+              <p>
+                In 2008, our founder opened the doors of a single-room home to
+                five orphaned children with no other place to go. There was no
+                grand plan — only a conviction that every child, regardless of
+                circumstance, deserved safety, love, and a future.
+              </p>
+              <p>
+                Word spread. More children came. A small community of
+                volunteers, neighbours, and early donors rallied around the
+                vision. Within three years, Rain Edge International had grown
+                into a fully registered orphanage home serving over 60 children
+                and had broken ground on its first primary school.
+              </p>
+              <p>
+                Today, we operate a thriving ecosystem — a residential home, a
+                primary school, a secondary school, and a portfolio of social
+                enterprises including a water packaging plant and a bakery — all
+                working together to make the organisation self-sustaining and to
+                give every child in our care a genuine shot at a prosperous
+                future.
+              </p>
+              <div class="story-actions">
+                <a href="/donate.html" class="btn-primary">Support Our Work</a>
+                <a href="/programs.html" class="btn-outline-dark"
+                  >Explore Programs</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════════════════
+     MISSION & VISION
+════════════════════════════════════════════════════════ -->
+      <section class="section section-alt" aria-labelledby="mv-heading">
+        <div class="container">
+          <div class="tag reveal">Purpose</div>
+          <h2 class="section-title reveal reveal-delay-1" id="mv-heading">
+            What We Stand For
+          </h2>
+          <p class="section-intro reveal reveal-delay-2">
+            Every decision we make — from how we run our home to how we invest
+            enterprise income — is anchored to these two foundational
+            statements.
+          </p>
+
+          <div class="mv-grid">
+            <!-- MISSION -->
+            <div
+              class="mv-card mv-card-mission reveal reveal-delay-1"
+              role="region"
+              aria-label="Our Mission"
+            >
+              <div class="mv-icon" aria-hidden="true">🎯</div>
+              <div class="mv-label">Mission</div>
+              <h3 class="mv-title">Restoring dignity, unlocking potential.</h3>
+              <p class="mv-body">
+                To provide every orphaned and vulnerable child with a secure
+                home, quality education from primary through secondary school,
+                and access to pathways of economic empowerment — all sustained
+                by ethical, community-rooted social enterprise.
+              </p>
+            </div>
+
+            <!-- VISION -->
+            <div
+              class="mv-card mv-card-vision reveal reveal-delay-2"
+              role="region"
+              aria-label="Our Vision"
+            >
+              <div class="mv-icon" aria-hidden="true">🌅</div>
+              <div class="mv-label">Vision</div>
+              <h3 class="mv-title">
+                A world where no child's future is determined by their past.
+              </h3>
+              <p class="mv-body">
+                We envision communities where every child — regardless of
+                background, loss, or circumstance — has the love, education, and
+                economic foundation needed to live a dignified, purposeful, and
+                self-sustaining life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════════════════
+     CORE VALUES
+════════════════════════════════════════════════════════ -->
+      <section class="section" aria-labelledby="values-heading">
+        <div class="container">
+          <div class="tag reveal">Our DNA</div>
+          <h2 class="section-title reveal reveal-delay-1" id="values-heading">
+            Core Values
+          </h2>
+          <p class="section-intro reveal reveal-delay-2">
+            These six principles guide every interaction, every program, and
+            every business decision we make at Rain Edge International.
+          </p>
+
+          <div class="values-grid">
+            <div
+              class="value-card reveal reveal-delay-1"
+              style="--bar-clr: #f5a623"
+            >
+              <div
+                class="value-icon"
+                style="background: #fef0d0"
+                aria-hidden="true"
+              >
+                ❤️
+              </div>
+              <h3>Unconditional Love</h3>
+              <p>
+                Every child in our care receives love that does not depend on
+                behaviour, background, or academic performance. Love is our
+                first programme.
+              </p>
+            </div>
+            <div
+              class="value-card reveal reveal-delay-2"
+              style="--bar-clr: #2a5298"
+            >
+              <div
+                class="value-icon"
+                style="background: #d6e4f7"
+                aria-hidden="true"
+              >
+                🎓
+              </div>
+              <h3>Education as a Right</h3>
+              <p>
+                We believe quality education is a fundamental right — not a
+                privilege — and we work tirelessly to ensure every child
+                accesses it free of charge.
+              </p>
+            </div>
+            <div
+              class="value-card reveal reveal-delay-3"
+              style="--bar-clr: #2eaf80"
+            >
+              <div
+                class="value-icon"
+                style="background: #d4f4e8"
+                aria-hidden="true"
+              >
+                🌱
+              </div>
+              <h3>Sustainability</h3>
+              <p>
+                Our enterprise model ensures we are not dependent on donations
+                alone. We build businesses that generate income, create jobs,
+                and fund our mission in perpetuity.
+              </p>
+            </div>
+            <div
+              class="value-card reveal reveal-delay-1"
+              style="--bar-clr: #e07b54"
+            >
+              <div
+                class="value-icon"
+                style="background: #fdeee8"
+                aria-hidden="true"
+              >
+                🤝
+              </div>
+              <h3>Community Partnership</h3>
+              <p>
+                We are embedded in the communities we serve. We hire locally,
+                source locally, and ensure the benefits of our enterprises flow
+                back into the surrounding neighbourhood.
+              </p>
+            </div>
+            <div
+              class="value-card reveal reveal-delay-2"
+              style="--bar-clr: #1c3a5e"
+            >
+              <div
+                class="value-icon"
+                style="background: #ebf0f8"
+                aria-hidden="true"
+              >
+                🔍
+              </div>
+              <h3>Transparency & Accountability</h3>
+              <p>
+                We publish our annual reports, financial summaries, and impact
+                data. Donors, partners, and the public deserve to know exactly
+                how every shilling is used.
+              </p>
+            </div>
+            <div
+              class="value-card reveal reveal-delay-3"
+              style="--bar-clr: #c47d00"
+            >
+              <div
+                class="value-icon"
+                style="background: #fef0d0"
+                aria-hidden="true"
+              >
+                ✊
+              </div>
+              <h3>Child Dignity First</h3>
+              <p>
+                We never use children for fundraising imagery without consent
+                and context. Every communication upholds the dignity and privacy
+                of the children we serve.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════════════════
+     IMPACT NUMBERS
+════════════════════════════════════════════════════════ -->
+      <section class="impact-section" aria-label="Our impact by the numbers">
+        <div class="container">
+          <div class="impact-grid">
+            <div class="impact-item reveal">
+              <div class="impact-num" data-target="500">500+</div>
+              <div class="impact-label">Children Supported</div>
+              <div class="impact-sublabel">Since founding in 2008</div>
+            </div>
+            <div class="impact-item reveal reveal-delay-1">
+              <div class="impact-num">2</div>
+              <div class="impact-label">Accredited Schools</div>
+              <div class="impact-sublabel">Primary & Secondary</div>
+            </div>
+            <div class="impact-item reveal reveal-delay-2">
+              <div class="impact-num">3+</div>
+              <div class="impact-label">Social Enterprises</div>
+              <div class="impact-sublabel">Water · Bakery · Farm</div>
+            </div>
+            <div class="impact-item reveal reveal-delay-3">
+              <div class="impact-num">1,000+</div>
+              <div class="impact-label">Community Members Served</div>
+              <div class="impact-sublabel">Through clean water & bakery</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════════════════
+     WHO WE SERVE
+════════════════════════════════════════════════════════ -->
+      <section class="section section-alt" aria-labelledby="serve-heading">
+        <div class="container">
+          <div class="tag reveal">Our Beneficiaries</div>
+          <h2 class="section-title reveal reveal-delay-1" id="serve-heading">
+            Who We Serve
+          </h2>
+          <p class="section-intro reveal reveal-delay-2">
+            Rain Edge International serves three interconnected groups — each
+            part of a broader ecosystem of care and development.
+          </p>
+
+          <div class="serve-grid">
+            <article class="serve-card reveal reveal-delay-1">
+              <div class="serve-header" style="background: #ebf0f8">
+                <span class="serve-icon-big" aria-hidden="true">🏠</span>
+              </div>
+              <div class="serve-body">
+                <h3>Orphaned Children</h3>
+                <p>
+                  The core of our mission. We provide residential care to
+                  children who have lost one or both parents and have no family
+                  support system.
+                </p>
+                <ul class="serve-list" aria-label="What we provide">
+                  <li>
+                    <span class="serve-list-dot" aria-hidden="true"></span>Safe
+                    residential accommodation
+                  </li>
+                  <li>
+                    <span class="serve-list-dot" aria-hidden="true"></span>Three
+                    nutritious meals daily
+                  </li>
+                  <li>
+                    <span class="serve-list-dot" aria-hidden="true"></span
+                    >Medical & psychological care
+                  </li>
+                  <li>
+                    <span class="serve-list-dot" aria-hidden="true"></span
+                    >Clothing, personal items & recreation
+                  </li>
+                  <li>
+                    <span class="serve-list-dot" aria-hidden="true"></span>Full
+                    school sponsorship from primary to secondary
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="serve-card reveal reveal-delay-2">
+              <div class="serve-header" style="background: #eaf3de">
+                <span class="serve-icon-big" aria-hidden="true">📚</span>
+              </div>
+              <div class="serve-body">
+                <h3>Day Students</h3>
+                <p>
+                  Our schools are open to day scholars from the surrounding
+                  community, many of whom come from low-income households.
+                  Education fees are subsidised.
+                </p>
+                <ul class="serve-list" aria-label="What we provide">
+                  <li>
+                    <span class="serve-list-dot" aria-hidden="true"></span
+                    >Quality primary education
+                  </li>
+                  <li>
+                    <span class="serve-list-dot" aria-hidden="true"></span
+                    >Structured secondary school curriculum
+                  </li>
+                  <li>
+                    <span class="serve-list-dot" aria-hidden="true"></span
+                    >School feeding programme
+                  </li>
+                  <li>
+                    <span class="serve-list-dot" aria-hidden="true"></span
+                    >Academic scholarships for top performers
+                  </li>
+                  <li>
+                    <span class="serve-list-dot" aria-hidden="true"></span
+                    >Career guidance & mentorship
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="serve-card reveal reveal-delay-3">
+              <div class="serve-header" style="background: #fdeee8">
+                <span class="serve-icon-big" aria-hidden="true">🌍</span>
+              </div>
+              <div class="serve-body">
+                <h3>The Wider Community</h3>
+                <p>
+                  Our enterprises create tangible benefits for the communities
+                  around us — not just economic, but social and public health
+                  outcomes too.
+                </p>
+                <ul class="serve-list" aria-label="What we provide">
+                  <li>
+                    <span class="serve-list-dot" aria-hidden="true"></span
+                    >Affordable packaged drinking water
+                  </li>
+                  <li>
+                    <span class="serve-list-dot" aria-hidden="true"></span>Fresh
+                    bread and baked goods daily
+                  </li>
+                  <li>
+                    <span class="serve-list-dot" aria-hidden="true"></span>Local
+                    employment (20+ jobs created)
+                  </li>
+                  <li>
+                    <span class="serve-list-dot" aria-hidden="true"></span
+                    >Vocational training for youth
+                  </li>
+                  <li>
+                    <span class="serve-list-dot" aria-hidden="true"></span
+                    >Agricultural produce for local markets
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════════════════
+     MILESTONE TIMELINE
+════════════════════════════════════════════════════════ -->
+      <section class="section" aria-labelledby="timeline-heading">
+        <div class="container">
+          <div class="tag reveal">Our Journey</div>
+          <h2 class="section-title reveal reveal-delay-1" id="timeline-heading">
+            15 Years of Milestones
+          </h2>
+          <p class="section-intro reveal reveal-delay-2">
+            From a single room to a full ecosystem — the milestones that have
+            shaped who we are today.
+          </p>
+
+          <div
+            class="timeline reveal"
+            id="timeline"
+            role="list"
+            aria-label="Organisation milestones"
+          >
+            <div class="timeline-track" aria-hidden="true">
+              <div class="timeline-track-fill" id="track-fill"></div>
+            </div>
+
+            <!-- 2008 -->
+            <div class="timeline-item" role="listitem">
+              <div class="timeline-content timeline-content-left"></div>
+              <div class="timeline-center" aria-hidden="true">
+                <div class="timeline-dot">
+                  <div class="timeline-dot-year">2008</div>
+                </div>
+              </div>
+              <div class="timeline-content timeline-content-right">
+                <span class="timeline-year-badge">2008 — Founded</span>
+                <h3>The First Home Opens</h3>
+                <p>
+                  Founder opens a single residential room to five orphaned
+                  children. Rain Edge International is officially registered as
+                  a non-profit organisation.
+                </p>
+              </div>
+            </div>
+
+            <!-- 2010 -->
+            <div class="timeline-item" role="listitem">
+              <div class="timeline-content timeline-content-left">
+                <span class="timeline-year-badge">2010 — Education</span>
+                <h3>Primary School Breaks Ground</h3>
+                <p>
+                  With support from early donors and volunteers, we begin
+                  construction of our first primary school classrooms, opening
+                  enrolment to both resident and day students.
+                </p>
+              </div>
+              <div class="timeline-center" aria-hidden="true">
+                <div class="timeline-dot">
+                  <div class="timeline-dot-year">2010</div>
+                </div>
+              </div>
+              <div class="timeline-content timeline-content-right"></div>
+            </div>
+
+            <!-- 2013 -->
+            <div class="timeline-item" role="listitem">
+              <div class="timeline-content timeline-content-left"></div>
+              <div class="timeline-center" aria-hidden="true">
+                <div class="timeline-dot">
+                  <div class="timeline-dot-year">2013</div>
+                </div>
+              </div>
+              <div class="timeline-content timeline-content-right">
+                <span class="timeline-year-badge">2013 — Expansion</span>
+                <h3>New Residential Block & 100 Children</h3>
+                <p>
+                  A new dormitory block is completed, allowing the home to
+                  expand its capacity to 100 children. A full-time medical nurse
+                  joins the team.
+                </p>
+              </div>
+            </div>
+
+            <!-- 2015 -->
+            <div class="timeline-item" role="listitem">
+              <div class="timeline-content timeline-content-left">
+                <span class="timeline-year-badge">2015 — Enterprise</span>
+                <h3>Water Packaging Plant Launched</h3>
+                <p>
+                  Our first social enterprise — a pure water packaging plant —
+                  begins operations, selling to local markets and institutions.
+                  Revenue directly funds the orphanage's operational costs.
+                </p>
+              </div>
+              <div class="timeline-center" aria-hidden="true">
+                <div class="timeline-dot">
+                  <div class="timeline-dot-year">2015</div>
+                </div>
+              </div>
+              <div class="timeline-content timeline-content-right"></div>
+            </div>
+
+            <!-- 2017 -->
+            <div class="timeline-item" role="listitem">
+              <div class="timeline-content timeline-content-left"></div>
+              <div class="timeline-center" aria-hidden="true">
+                <div class="timeline-dot">
+                  <div class="timeline-dot-year">2017</div>
+                </div>
+              </div>
+              <div class="timeline-content timeline-content-right">
+                <span class="timeline-year-badge">2017 — Education</span>
+                <h3>Secondary School Opens</h3>
+                <p>
+                  Rain Edge Secondary School admits its first cohort of
+                  students, providing a seamless educational pathway from
+                  primary through to national examinations for all our children.
+                </p>
+              </div>
+            </div>
+
+            <!-- 2019 -->
+            <div class="timeline-item" role="listitem">
+              <div class="timeline-content timeline-content-left">
+                <span class="timeline-year-badge">2019 — Enterprise</span>
+                <h3>Bakery & Farm Established</h3>
+                <p>
+                  We diversify our enterprise portfolio with a community bakery
+                  and a productive farm — reducing food costs for the home and
+                  creating 15 full-time jobs for community members.
+                </p>
+              </div>
+              <div class="timeline-center" aria-hidden="true">
+                <div class="timeline-dot">
+                  <div class="timeline-dot-year">2019</div>
+                </div>
+              </div>
+              <div class="timeline-content timeline-content-right"></div>
+            </div>
+
+            <!-- 2023 -->
+            <div class="timeline-item" role="listitem">
+              <div class="timeline-content timeline-content-left"></div>
+              <div class="timeline-center" aria-hidden="true">
+                <div class="timeline-dot">
+                  <div class="timeline-dot-year">2023</div>
+                </div>
+              </div>
+              <div class="timeline-content timeline-content-right">
+                <span class="timeline-year-badge">2023 — Achievement</span>
+                <h3>First University Graduates</h3>
+                <p>
+                  Our pioneering cohort of children — those who entered the home
+                  in the early years — graduate from university with degrees in
+                  medicine, engineering, and education. A defining milestone.
+                </p>
+              </div>
+            </div>
+
+            <!-- Today -->
+            <div class="timeline-item" role="listitem">
+              <div class="timeline-content timeline-content-left">
+                <span
+                  class="timeline-year-badge"
+                  style="
+                    background: var(--clr-primary-light);
+                    color: var(--clr-primary);
+                  "
+                  >Today — Growing</span
+                >
+                <h3>Expanding Ventures & Deeper Impact</h3>
+                <p>
+                  With 500+ children served, two accredited schools, three
+                  social enterprises, and new manufacturing ventures in
+                  development — Rain Edge International continues to grow and
+                  deepen its community impact.
+                </p>
+              </div>
+              <div class="timeline-center" aria-hidden="true">
+                <div class="timeline-dot" style="background: var(--clr-accent)">
+                  <div
+                    class="timeline-dot-year"
+                    style="color: var(--clr-primary)"
+                  >
+                    Now
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-content timeline-content-right"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════════════════
+     LEADERSHIP TEAM
+════════════════════════════════════════════════════════ -->
+      <section class="section section-alt" aria-labelledby="team-heading">
+        <div class="container">
+          <div class="tag reveal">Our People</div>
+          <h2 class="section-title reveal reveal-delay-1" id="team-heading">
+            The Team Behind the Mission
+          </h2>
+          <p class="section-intro reveal reveal-delay-2">
+            Passionate, experienced, and deeply committed — meet the people who
+            show up every day for our children and community.
+          </p>
+
+          <div class="team-grid">
+            <!-- Founder — featured card -->
+            <article class="team-card team-card-founder reveal reveal-delay-1">
+              <div class="team-avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80&auto=format"
+                  alt="Portrait of the founder of Rain Edge International"
+                  width="500"
+                  loading="lazy"
+                />
+              </div>
+              <div class="team-body">
+                <div class="team-role">Founder & Executive Director</div>
+                <div class="team-name">Emmanuel K. Osei</div>
+                <p class="team-bio">
+                  A former social worker with 20+ years of experience in child
+                  welfare, Emmanuel founded Rain Edge International after
+                  witnessing the systemic gaps in care for orphaned children. He
+                  has grown the organisation from a one-room shelter to a
+                  multi-programme ecosystem touching thousands of lives.
+                </p>
+                <blockquote class="team-quote">
+                  "Every child who walks through our door is not a problem to
+                  solve — they are a person to love and a future to invest in."
+                </blockquote>
+              </div>
+            </article>
+
+            <!-- Team member 2 -->
+            <article class="team-card reveal reveal-delay-2">
+              <div class="team-avatar">
+                <div class="team-avatar-fallback" style="background: #2a5298">
+                  AM
+                </div>
+              </div>
+              <div class="team-body">
+                <div class="team-role">Head of Education</div>
+                <div class="team-name">Abena Mensah</div>
+                <p class="team-bio">
+                  A former Ministry of Education curriculum specialist, Abena
+                  oversees both our primary and secondary school programmes,
+                  ensuring we meet national standards while innovating in
+                  classroom delivery.
+                </p>
+              </div>
+            </article>
+
+            <!-- Team member 3 -->
+            <article class="team-card reveal reveal-delay-3">
+              <div class="team-avatar">
+                <div class="team-avatar-fallback" style="background: #e07b54">
+                  JO
+                </div>
+              </div>
+              <div class="team-body">
+                <div class="team-role">Director of Enterprises</div>
+                <div class="team-name">Joseph Owusu</div>
+                <p class="team-bio">
+                  Joseph leads our commercial operations — the water plant,
+                  bakery, and farm — with a background in agribusiness and
+                  social enterprise management. He ensures each venture is
+                  profitable, ethical, and community-serving.
+                </p>
+              </div>
+            </article>
+
+            <!-- Team member 4 -->
+            <article class="team-card reveal reveal-delay-4">
+              <div class="team-avatar">
+                <div class="team-avatar-fallback" style="background: #2eaf80">
+                  FA
+                </div>
+              </div>
+              <div class="team-body">
+                <div class="team-role">Child Welfare Manager</div>
+                <div class="team-name">Faith Acheampong</div>
+                <p class="team-bio">
+                  A licensed psychologist and child welfare officer, Faith
+                  oversees the day-to-day wellbeing of children in our
+                  residential home — from counselling and health to recreation
+                  and spiritual growth.
+                </p>
+              </div>
+            </article>
+
+            <!-- Team member 5 -->
+            <article class="team-card reveal reveal-delay-1">
+              <div class="team-avatar">
+                <div class="team-avatar-fallback" style="background: #1c3a5e">
+                  DK
+                </div>
+              </div>
+              <div class="team-body">
+                <div class="team-role">Finance & Operations</div>
+                <div class="team-name">Diana Kyei</div>
+                <p class="team-bio">
+                  Diana manages all financial reporting, donor accountability,
+                  and operational efficiency across the organisation. She
+                  ensures every penny is tracked, reported, and directed to
+                  maximum impact.
+                </p>
+              </div>
+            </article>
+
+            <!-- Team member 6 -->
+            <article class="team-card reveal reveal-delay-2">
+              <div class="team-avatar">
+                <div class="team-avatar-fallback" style="background: #c47d00">
+                  KA
+                </div>
+              </div>
+              <div class="team-body">
+                <div class="team-role">Partnerships & Fundraising</div>
+                <div class="team-name">Kofi Asante</div>
+                <p class="team-bio">
+                  Kofi builds and maintains relationships with donors,
+                  institutional partners, and corporate sponsors. He leads our
+                  campaigns, grant applications, and community engagement
+                  strategy.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════════════════
+     PARTNERS & AFFILIATIONS
+════════════════════════════════════════════════════════ -->
+      <section class="partners-strip" aria-labelledby="partners-heading">
+        <div class="container">
+          <p class="partners-label" id="partners-heading">
+            Partners, Affiliations & Accreditations
+          </p>
+          <div class="partners-row" role="list">
+            <div class="partner-badge reveal" role="listitem">
+              <span class="partner-icon" aria-hidden="true">🏛️</span>Ministry of
+              Education — Accredited
+            </div>
+            <div class="partner-badge reveal reveal-delay-1" role="listitem">
+              <span class="partner-icon" aria-hidden="true">🌐</span>UNICEF
+              Partner Organisation
+            </div>
+            <div class="partner-badge reveal reveal-delay-2" role="listitem">
+              <span class="partner-icon" aria-hidden="true">🤝</span>NGO Council
+              Member
+            </div>
+            <div class="partner-badge reveal reveal-delay-3" role="listitem">
+              <span class="partner-icon" aria-hidden="true">💼</span>Child
+              Welfare Foundation
+            </div>
+            <div class="partner-badge reveal reveal-delay-4" role="listitem">
+              <span class="partner-icon" aria-hidden="true">🌱</span>Social
+              Enterprise Alliance
+            </div>
+            <div class="partner-badge reveal reveal-delay-1" role="listitem">
+              <span class="partner-icon" aria-hidden="true">📋</span>Food Safety
+              Authority — Certified
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════════════════
+     JOIN US CTA
+════════════════════════════════════════════════════════ -->
+      <section class="cta-section" aria-labelledby="cta-heading">
+        <div class="container">
+          <div class="cta-inner">
+            <div
+              class="tag"
+              style="
+                background: rgba(245, 166, 35, 0.15);
+                color: var(--clr-accent);
+              "
+              aria-hidden="true"
+            >
+              Get Involved
+            </div>
+            <h2 id="cta-heading">Be Part of <em>Something Real</em></h2>
+            <p>
+              You don't have to be a millionaire to change a child's life. You
+              just have to care enough to act. Here's how you can be part of the
+              Rain Edge International family.
+            </p>
+            <div class="cta-actions">
+              <a href="/donate.html" class="btn-primary">Donate Now</a>
+              <a href="/contact.html" class="btn-outline-white">Get in Touch</a>
+            </div>
+
+            <div class="cta-ways" role="list" aria-label="Ways to get involved">
+              <div class="cta-way reveal" role="listitem">
+                <div class="cta-way-icon" aria-hidden="true">💛</div>
+                <h3>Donate</h3>
+                <p>
+                  One-time or monthly donations fund meals, fees, uniforms, and
+                  care for children who need it most.
+                </p>
+              </div>
+              <div class="cta-way reveal reveal-delay-1" role="listitem">
+                <div class="cta-way-icon" aria-hidden="true">✋</div>
+                <h3>Volunteer</h3>
+                <p>
+                  Bring your skills — teaching, health, construction, business —
+                  and spend time building alongside our team.
+                </p>
+              </div>
+              <div class="cta-way reveal reveal-delay-2" role="listitem">
+                <div class="cta-way-icon" aria-hidden="true">🤝</div>
+                <h3>Partner With Us</h3>
+                <p>
+                  Corporate partners and institutional donors can co-invest in
+                  our schools, enterprises, or capital projects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════ -->
+    <footer class="footer" aria-label="Site footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 4px;
+              "
+            >
+              <div class="logo-mark" aria-hidden="true">RE</div>
+              <span
+                style="
+                  font-size: var(--fs-base);
+                  color: rgba(255, 255, 255, 0.85);
+                  font-weight: 600;
+                "
+                >Rain Edge International</span
+              >
+            </div>
+            <p>
+              A home, school, and enterprise ecosystem dedicated to transforming
+              the lives of orphaned children and their communities.
+            </p>
+            <div class="footer-socials" aria-label="Social media links">
+              <a class="social-btn" href="#" aria-label="Facebook">f</a>
+              <a class="social-btn" href="#" aria-label="Instagram">in</a>
+              <a class="social-btn" href="#" aria-label="Twitter">tw</a>
+              <a class="social-btn" href="#" aria-label="YouTube">yt</a>
+            </div>
+          </div>
+          <div>
+            <h4>Programs</h4>
+            <ul>
+              <li><a href="/programs.html">Orphanage Home</a></li>
+              <li><a href="/schools.html">Primary School</a></li>
+              <li><a href="/schools.html">Secondary School</a></li>
+              <li><a href="/programs.html">Vocational Training</a></li>
+              <li><a href="/programs.html">Scholarships</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Industries</h4>
+            <ul>
+              <li><a href="/industries.html">Pure Water Plant</a></li>
+              <li><a href="/industries.html">Bakery</a></li>
+              <li><a href="/industries.html">Farm & Agriculture</a></li>
+              <li><a href="/industries.html">New Ventures</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Organisation</h4>
+            <ul>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/about.html">Our Impact</a></li>
+              <li><a href="/news.html">News & Stories</a></li>
+              <li><a href="/about.html">Volunteer</a></li>
+              <li><a href="/contact.html">Partner With Us</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="/donate.html">Donate</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Rain Edge International. All rights reserved.</p>
+          <div>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms of Use</a>
+            <a href="/annual-report.html">Annual Report</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* Navbar scroll */
+      const nav = document.getElementById("nav");
+      window.addEventListener(
+        "scroll",
+        () => {
+          nav.classList.toggle("scrolled", window.scrollY > 20);
+        },
+        { passive: true },
+      );
+
+      /* Hamburger */
+      const hamburger = document.getElementById("nav-hamburger");
+      const navLinks = document.getElementById("nav-links");
+      hamburger.addEventListener("click", () => {
+        const open = navLinks.classList.toggle("nav-open");
+        hamburger.classList.toggle("open", open);
+        hamburger.setAttribute("aria-expanded", open);
+        document.body.style.overflow = open ? "hidden" : "";
+      });
+      navLinks.querySelectorAll("a").forEach((l) =>
+        l.addEventListener("click", () => {
+          navLinks.classList.remove("nav-open");
+          hamburger.classList.remove("open");
+          hamburger.setAttribute("aria-expanded", "false");
+          document.body.style.overflow = "";
+        }),
+      );
+      document.addEventListener("click", (e) => {
+        if (
+          !nav.contains(e.target) &&
+          navLinks.classList.contains("nav-open")
+        ) {
+          navLinks.classList.remove("nav-open");
+          hamburger.classList.remove("open");
+          hamburger.setAttribute("aria-expanded", "false");
+          document.body.style.overflow = "";
+        }
+      });
+
+      /* Scroll reveal */
+      const revealEls = document.querySelectorAll(".reveal");
+      const revealObs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              revealObs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+      );
+      revealEls.forEach((el) => revealObs.observe(el));
+
+      /* Timeline fill on scroll */
+      const track = document.getElementById("track-fill");
+      const timeline = document.getElementById("timeline");
+      if (track && timeline) {
+        const fillObs = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                track.style.height = "100%";
+                fillObs.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.05 },
+        );
+        fillObs.observe(timeline);
+      }
+    </script>
+  </body>
+</html>
